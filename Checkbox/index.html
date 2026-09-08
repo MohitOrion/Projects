@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive checkbox — once clicked, the entire universe collapses into a black hole. There is no coming back.">
+  <title>Black Hole Checkbox — Point of No Return</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <canvas id="blackholeCanvas"></canvas>
 
+  <!-- Warning overlay on hover -->
+  <div class="warning-overlay" id="warningOverlay">
+    <div class="warning-scanlines"></div>
+  </div>
+
+  <!-- Main UI that will get consumed -->
+  <div class="container" id="container">
+    <h1 class="title" id="title">Event Horizon</h1>
+    <p class="subtitle" id="subtitle">One click. One singularity. No escape.</p>
+
+    <div class="checkbox-area">
+      <label class="checkbox-wrapper" id="checkboxWrapper">
+        <input type="checkbox" id="blackholeCheckbox">
+        <span class="checkbox-visual" id="checkboxVisual">
+          <span class="checkbox-ring"></span>
+          <span class="checkbox-core"></span>
+        </span>
+        <span class="checkbox-label">Cross the Event Horizon</span>
+      </label>
+
+      <!-- Hover warning message -->
+      <div class="hover-warning" id="hoverWarning">
+        <div class="warning-icon">⚠</div>
+        <div class="warning-lines">
+          <span class="warning-line glitch-text" data-text="WARNING: POINT OF NO RETURN">WARNING: POINT OF NO RETURN</span>
+          <span class="warning-line-sub">Once activated, the singularity cannot be stopped.</span>
+          <span class="warning-line-sub">Everything will be consumed.</span>
+          <span class="warning-line-sub last">There is no coming back.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="status-bar" id="statusBar">
+      <div class="status-dot" id="statusDot"></div>
+      <span class="status-text" id="statusText">Awaiting activation</span>
+    </div>
+  </div>
+
+  <!-- Post-consumption void scene -->
+  <div class="void-scene" id="voidScene">
+    <div class="void-content">
+      <div class="void-ring" id="voidRing"></div>
+      <h2 class="void-title" id="voidTitle">You crossed the event horizon.</h2>
+      <p class="void-subtitle" id="voidSubtitle">Time has stopped. Light cannot escape. Neither can you.</p>
+      <div class="void-coordinates" id="voidCoordinates">
+        <span>r = 0</span>
+        <span>t = ∞</span>
+        <span>escape velocity > c</span>
+      </div>
+      <button class="void-reset" id="voidReset">↻ Restart the Universe</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
