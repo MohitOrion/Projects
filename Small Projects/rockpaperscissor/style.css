@@ -1,7 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
     text-align: center;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -9,15 +15,17 @@ h1 {
     color: #fff;
     height: 5rem;
     line-height: 5rem;
+    font-size: 2rem;
 }
 
 .choice {
-    height: 165px;
-    width: 165px;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .choice:hover{
@@ -26,8 +34,8 @@ h1 {
 }
 
 img {
-    height: 150px;
-    width: 150px;
+    height: 9.2rem;
+    width: 9.2rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -55,13 +63,103 @@ img {
 
 .msg-container {
     margin-top: 5rem;
+    padding: 0 1rem;
 }
 
 #msg {
     background-color: #081b31;
     color: #fff;
     font-size: 2rem;
-    display: inline;
+    display: inline-block;
     padding: 1rem;
     border-radius: 1rem;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    h1 {
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .choices {
+        gap: 1rem;
+        margin-top: 3rem;
+        padding: 0 1rem;
+    }
+
+    .choice {
+        width: 28vw;
+        height: 28vw;
+        max-width: 8rem;
+        max-height: 8rem;
+    }
+
+    img {
+        width: 26vw;
+        height: 26vw;
+        max-width: 7.4rem;
+        max-height: 7.4rem;
+    }
+
+    .score-board {
+        gap: 2.5rem;
+        margin-top: 2.5rem;
+        font-size: 1.3rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 3.5rem;
+    }
+
+    .msg-container {
+        margin-top: 3rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.8rem 1rem;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media (max-width: 400px) {
+
+    .choices {
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .choice {
+        width: 27vw;
+        height: 27vw;
+    }
+
+    img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .score-board {
+        gap: 1.5rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+    }
 }
