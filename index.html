@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Websites</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Some of my small project deployment</h1>
-    <a href="Small Projects/tictactoe/index.html">Tick Tac Toe Game</a>
-    <a href="Small Projects/rockpaperscissor/index.html">Rock Paper Scissor Game</a>
+<body class="bg-primary-subtle">
+    <header>
+        <div class="grid text-center">
+            <h1 class="h1">Games</h1>
+        </div>
+    </header>
+    
+    <main>
+        <div class="text-center">
+            <button class="btn btn-success" onclick="window.location.href='Small Projects/tictactoe/index.html';">Tick Tac Toe</button>
+            <button class="btn btn-success" onclick="window.location.href='Small Projects/rockpaperscissor/index.html';">Rock Paper Scissor</button>
+        </div>
+    </main>
+
 </body>
 </html>
