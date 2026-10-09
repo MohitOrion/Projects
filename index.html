@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Websites</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body class="bg-primary-subtle">
+
+<body>
     <header>
-        <div class="grid text-center">
-            <h1 class="h1">Games</h1>
+        <div class="navigation">
+            <h1>Welcome To Project Show Case</h1>
         </div>
     </header>
     
     <main>
-        <div class="text-center">
-            <button class="btn btn-success" onclick="window.location.href='Small Projects/tictactoe/index.html';">Tick Tac Toe</button>
-            <button class="btn btn-success" onclick="window.location.href='Small Projects/rockpaperscissor/index.html';">Rock Paper Scissor</button>
+        <div class="row">
+            <div class="col-md-6 games section">
+                <h2 class="">Programming Projects</h2>
+
+                <button id="tick" class="btn btn-success " onclick="window.location.href='Small Projects/tictactoe/index.html';">Tick Tac Toe</button>
+                <button id="rock" class="btn btn-success " onclick="window.location.href='Small Projects/rockpaperscissor/index.html';">Rock Paper Scissor</button>
+
+            </div>
+
+            <div class="col section">
+                <h2 class="">Data Analysis Projects</h2>
+                <button class="btn btn-success" onclick="window.location.href='https://github.com/MohitOrion/Projects/tree/main/Data-Analysis';">Custom Shopping Behavior</button>
+            </div>
         </div>
     </main>
 

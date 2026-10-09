@@ -1,28 +1,28 @@
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+.navigation {
     text-align: center;
-    background-color: #2A2D34   ;
-}
-
-h1 {
-    background-color: #30C5FF;
-    color: #2A2D34;
-    line-height: 4rem;
-    font-size: 3rem;
-}
-
-#rock,#tick {
-    line-height: 5rem;
-    color: aliceblue;
-    font-size: 2rem;
-    background-color: #5C946E;
-    border-radius: 1rem;
+    background-color: rebeccapurple;
     padding: 1rem;
-    margin: 1rem;
+    color: aliceblue;
 }
 
-.game:hover {
-    opacity: 80%;
+.games {
+    margin-left: 12.5%;
+    
+}
+
+#rock {
+    text-align: right;
+    align-items: right;
+    
+}
+
+.section {
+    padding-top: 1rem;
+    
 }
